@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Hugging priority" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5L6-nE-VYj">
+                                <rect key="frame" x="30" y="159" width="123" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Compression resistance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1V-Sg-PSL">
+                                <rect key="frame" x="100" y="198" width="185" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lg1-Mj-CcR">
+                                <rect key="frame" x="131" y="50" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.86961108580000002" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Button 1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="L0R-wX-ein"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCR-wB-bi2">
+                                <rect key="frame" x="131" y="100" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.86961108580000002" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Button 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wo7-sX-8Q9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zCR-wB-bi2" firstAttribute="top" secondItem="lg1-Mj-CcR" secondAttribute="bottom" constant="20" id="Bb2-MG-RVy"/>
+                            <constraint firstAttribute="centerX" secondItem="zCR-wB-bi2" secondAttribute="centerX" id="GXt-7Z-j3A"/>
+                            <constraint firstAttribute="centerX" secondItem="zCR-wB-bi2" secondAttribute="centerX" id="KKe-2y-5ri"/>
+                            <constraint firstAttribute="trailing" secondItem="t1V-Sg-PSL" secondAttribute="trailing" priority="495" constant="100" id="NQu-oC-vVj"/>
+                            <constraint firstItem="zCR-wB-bi2" firstAttribute="width" secondItem="lg1-Mj-CcR" secondAttribute="width" id="ORV-pq-3mg"/>
+                            <constraint firstItem="5L6-nE-VYj" firstAttribute="top" secondItem="zCR-wB-bi2" secondAttribute="bottom" constant="29" id="cVa-jj-cna"/>
+                            <constraint firstItem="t1V-Sg-PSL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" priority="500" constant="100" id="eVj-A8-loL"/>
+                            <constraint firstAttribute="centerX" secondItem="lg1-Mj-CcR" secondAttribute="centerX" id="hFs-s3-dPh"/>
+                            <constraint firstItem="5L6-nE-VYj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" priority="500" constant="30" id="m86-Aq-pX5"/>
+                            <constraint firstItem="lg1-Mj-CcR" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="pgj-v9-3Tg"/>
+                            <constraint firstItem="t1V-Sg-PSL" firstAttribute="top" secondItem="5L6-nE-VYj" secondAttribute="bottom" constant="18" id="rGW-hu-WpJ"/>
+                            <constraint firstAttribute="trailing" secondItem="5L6-nE-VYj" secondAttribute="trailing" priority="495" constant="30" id="vtU-c6-33m"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="146" y="68"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
