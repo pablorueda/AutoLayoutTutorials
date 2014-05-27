@@ -1,4 +1,4 @@
-# AutoLayout
+# Auto Layout Tutorials
 
 Tutorial projects showing techniques and tips for implementing autolayout into a project.
 
