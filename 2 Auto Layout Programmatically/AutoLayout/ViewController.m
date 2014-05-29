@@ -111,6 +111,12 @@
     NSLayoutFormatOptions options = NSLayoutFormatAlignAllTop | NSLayoutFormatAlignAllBottom;
     NSArray *rightButtonConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:[_leftButton]-[rightButton]" options:options metrics:nil views:viewsDictionary];
     [self.view addConstraints:rightButtonConstraints];
+    
+    //You can add priorities after the value of a constraint with @quantity
+    //   H:[_leftButton]-100@250-[rightButton]
+    //Also you can use the options dictionarty to assign enum values
+    //   NSDictionary *metrics = @{@"lowPriority":@(UILayoutPriorityDefaultLow};
+    //   H:[_leftButton]-100@lowPriority-[rightButton]
 }
 
 @end
